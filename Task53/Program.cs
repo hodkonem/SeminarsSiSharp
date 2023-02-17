@@ -38,5 +38,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 int[,] matrix = CreateMatrixRndInt(3, 4, 1, 10);
-PrintMatrix(matrix); Console.WriteLine();
-Replace(matrix); PrintMatrix(matrix);
+PrintMatrix(matrix);
+Console.WriteLine();
+Replace(matrix);
+PrintMatrix(matrix);
