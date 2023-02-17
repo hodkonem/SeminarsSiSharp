@@ -15,11 +15,10 @@
 // 5 9 2 3
 // 64 4 4 4
 
-int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
+int[,] GenerateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[,] matrix = new int[rows, columns]; // 0, 1
+    int[,] matrix = new int[rows, columns];
     Random rnd = new Random();
-
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -44,16 +43,16 @@ void PrintMatrix(int[,] matrix)
 }
 void FindEvenValues(int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i+=2)
+    for (int i = 0; i < matrix.GetLength(0); i += 2)
     {
-        for (int j = 0; j < matrix.GetLength(1); j+=2)
+        for (int j = 0; j < matrix.GetLength(1); j += 2)
         {
             matrix[i, j] *= matrix[i, j];
         }
     }
 }
 
-int[,] matr = CreateMatrixRndInt(3, 4, 0, 10);
+int[,] matr = GenerateMatrixRndInt(3, 4, 0, 10);
 PrintMatrix(matr);
 FindEvenValues(matr);
 Console.WriteLine(matr);
