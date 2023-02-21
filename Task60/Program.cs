@@ -35,11 +35,11 @@ void GenerateMatrix(int[,,] matrix, int min, int max)
 string PrintMatrix(int[,,] matrix)
 {
     string str = string.Empty;
-    for (int i = 0; i < matrix.GetLongLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLongLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            for (int k = 0; k < matrix.GetLongLength(2); k++)
+            for (int k = 0; k < matrix.GetLength(2); k++)
             {
                 if (k == matrix.GetLength(1) - 1) str += $"{matrix[i, j, k],3}({i},{j},{k})";
                 else str += $"{matrix[i, j, k],3}, ";
@@ -55,7 +55,7 @@ string PrintMatrix(int[,,] matrix)
 
 int[,,] matrixNumbers = new int[4, 4, 4];
 int minNumber = 10;
-int maxNumber = 90;
+int maxNumber = 99;
 if (matrixNumbers.Length > maxNumber - minNumber)
 {
     Console.WriteLine("Нельзя создать матрицу данного размера! Количество элементов матрицы превосходит количество чисел в промежутке от минимума к максимуму");
