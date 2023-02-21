@@ -26,11 +26,12 @@ string PrintMatrix(int[,] matrix)
         str += "[";
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j == matrix.GetLength(1) - 1) str += $ { matrix[i, j],3};
+            if (j == matrix.GetLength(1) - 1) str += $" {matrix[i, j],3} ";
             else str += $" {matrix[i, j],3}, ";
         }
-        str += "]";
+        str += "]\n";
     }
+    return str;
 
 }
 
@@ -46,7 +47,6 @@ int[] MatrixToArray(int[,] matrix)
             result[count++] = matrix[i, j];
         }
     }
-    Array.Sort(result);
     return result;
 }
 
