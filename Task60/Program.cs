@@ -65,3 +65,43 @@ else
     GenerateMatrix(matrixNumbers, minNumber, maxNumber);
     Console.WriteLine(PrintMatrix(matrixNumbers));
 }
+
+// int[,,] arr = new int[2, 2, 2];
+// // Generate non-repeating two-digit numbers
+// for (int i = 0; i < arr.GetLength(0); i++)
+// {
+//     for (int j = 0; j < arr.GetLength(1); j++)
+//     {
+//         for (int k = 0; k < arr.GetLength(2); k++)
+//         {
+//             arr[i, j, k] = GenerateRandomNumber();
+//         }
+//     }
+// }
+
+// // Print the array line by line
+// for (int i = 0; i < arr.GetLength(0); i++)
+// {
+//     for (int j = 0; j < arr.GetLength(1); j++)
+//     {
+//         for (int k = 0; k < arr.GetLength(2); k++)
+//         {
+//             Console.Write($"{arr[i, j, k]}({i}.{j}.{k}) ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+
+// int GenerateRandomNumber()
+// {
+//     Random rnd = new Random();
+//     int number;
+//     do
+//     {
+//         number = rnd.Next(10, 100);
+//     }
+//     while (number % 10 == 0 || number % 11 == 0);
+
+//     return number;
+// }
