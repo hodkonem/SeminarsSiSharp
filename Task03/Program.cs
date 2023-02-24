@@ -11,36 +11,37 @@
 // Если неправильный ввод, то мы должны ввывести пользователю сообщение "Error"
 
 Console.WriteLine("Введите число: ");
-string day = Console.ReadLine();
-if (day == "1") // Используем именно двойное равно - это оператор сравнения.
+int day = Convert.ToInt32(Console.ReadLine()); // Преобразуем введенное значение в целочисленный тип данных 
+if (day == 1)
 {
     Console.WriteLine("Понедельник");
 }
-else if (day == "2") // Используем вариант с else if, чтобы если будет нужный вариант, остальные не будут дальше проверяться.
+else if (day == 2)
 {
     Console.WriteLine("Вторник");
 }
-else if (day == "3")
+else if (day == 3)
 {
     Console.WriteLine("Среда");
 }
-else if (day == "4")
+else if (day == 4)
 {
     Console.WriteLine("Четверг");
 }
-else if (day == "5")
+else if (day == 5)
 {
     Console.WriteLine("Пятница");
 }
-else if (day == "6")
+else if (day == 6)
 {
     Console.WriteLine("Суббота");
 }
-else if (day == "7")
+else if (day == 7)
 {
     Console.WriteLine("Воскресенье");
 }
 else
 {
-    Console.WriteLine("Error"); // Если пользователь ввёл что-то другое, то мы выводим какую-то ошибку.
+    Console.WriteLine("Error");
 }
+// Если пользователь ввёл что-то другое, то мы выводим какую-то ошибку. } 
