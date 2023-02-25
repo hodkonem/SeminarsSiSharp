@@ -6,7 +6,16 @@
 Console.WriteLine("Введите два числа:");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
-GapNaturalNumbers(number1, number2);
+
+if (number1 > 0 && number2 > 0) 
+{
+   GapNaturalNumbers(number1, number2);
+} 
+else 
+{
+    Console.WriteLine("Введенные числа не являются натуральными");
+}
+
 void GapNaturalNumbers(int num1, int num2)
 {
     Console.Write($"{num1} ");
