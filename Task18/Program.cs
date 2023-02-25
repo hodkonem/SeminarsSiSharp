@@ -29,6 +29,6 @@ string Quarter(string num)
         case "2": return "Допустимые координаты: x < 0 и y > 0";
         case "3": return "Допустимые координаты: x < 0 и y < 0";
         case "4": return "Допустимые координаты: x > 0 и y < 0";
-        default: return "Неккоректный ввод!";
+        default: return "Некорректный ввод!";
     }
 }
